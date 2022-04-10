@@ -3,4 +3,5 @@ import { tracked } from '@glimmer/tracking';
 
 export default class SchedulerController extends Controller {
   @tracked activeTab;
+  @tracked selectedService;
 }

@@ -47,4 +47,9 @@ You will need the following things properly installed on your computer.
 
 open -a [PATH TO Google\ Chrome] --args --disable-web-security --user-data-dir --user-data-dir="tmp"
 
-## Things still TODO
+## Things I would do if I had more time
+
+- Use data-element attributes instead of classes in the tests to make the tests less brittle.
+- Deploy the app so I could dev test the embed by adding to a page and passing the baseConfigUrl and clinicianId.
+- Use Google Geolocation API to reverse geocode and find the location address based on latitude and longitude.
+- Think of a more optimal Ember solution other than using peekRecord in the location route. See note in app/routes/scheduler/location.js

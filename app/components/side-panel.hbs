@@ -4,8 +4,11 @@
         <p class="side-panel__details side-panel__clinician">Rob Gross, MFT</p>
     </div>
     <div>
-        <p class="side-panel__step {{if this.isServiceStep "bold"}}">2. Select a service</p>
-        <p class="side-panel__details {{if this.isServiceStep "hidden"}}">Service details</p>
+        <p class="side-panel__step {{if this.isServiceStep "bold"}}">2. {{this.displayTextServiceStep}}</p>
+        <div class="side-panel__details {{if this.isServiceStep "hidden"}}">
+            <p>{{@selectedService.description}}</p>
+            <p>{{@selectedService.durationDisplay}}</p>
+        </div>
     </div>
     <div>
         <p class="side-panel__step {{if this.isLocationStep "bold"}}">3. Select a location</p>
