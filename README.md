@@ -13,14 +13,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-- `git clone <repository-url>` this repository
+- `git clone https://github.com/aalanders/scheduling-widget-ember`
 - `cd scheduling-widget-ember`
 - `npm install`
 
 ## Running / Development
 
 - `ember serve`
-- Visit app at [http://localhost:4200](http://localhost:4200).
+- Visit app at [http://localhost:4200/scheduler](http://localhost:4200/scheduler).
 - Visit tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
 ### Running Tests
@@ -31,12 +31,14 @@ You will need the following things properly installed on your computer.
 ## To embed on website
 
 - Add script to website:
-  <script src="https://www.scheduling-widget-ember-deployed-app.com/embed.js"></script>
 
+  ```
+  <script src="https://www.scheduling-widget-ember-deployed-app.com/embed.js"></script>
   <Scheduling-Widget-Ember shadow clientBaseUrl="<URL>" enable-clientBaseUrl clinicianId="<ID>" enable-clincicianId ></Scheduling-Widget-Ember>
+  ```
 
 - Read more on Github page about ember-embedded-snippet [https://github.com/kaliber5/ember-embedded-snippet](https://github.com/kaliber5/ember-embedded-snippet).
-- Note: Currently will not work since the app is not deloyed to an environment
+- Note: The embed will not work right now since the app is not deloyed to an environment
 
 ## CORS error
 
