@@ -1,56 +1,48 @@
 # scheduling-widget-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Thanks for looking at my project!
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://cli.emberjs.com/release/)
-* [Google Chrome](https://google.com/chrome/)
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/) (with npm)
+- [Ember CLI](https://cli.emberjs.com/release/)
+- [Google Chrome](https://google.com/chrome/)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd scheduling-widget-ember`
-* `npm install`
+- `git clone <repository-url>` this repository
+- `cd scheduling-widget-ember`
+- `npm install`
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
+- `ember serve`
+- Visit app at [http://localhost:4200](http://localhost:4200).
+- Visit tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
+- `ember test`
+- `ember test --server`
 
-### Linting
+## To embed on website
 
-* `npm run lint`
-* `npm run lint:fix`
+- Add script to website:
+  <script src="https://www.scheduling-widget-ember-deployed-app.com/embed.js"></script>
 
-### Building
+  <Scheduling-Widget-Ember shadow clientBaseUrl="<URL>" enable-clientBaseUrl clinicianId="<ID>" enable-clincicianId ></Scheduling-Widget-Ember>
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+- Read more on Github page about ember-embedded-snippet [https://github.com/kaliber5/ember-embedded-snippet](https://github.com/kaliber5/ember-embedded-snippet).
+- Note: Currently will not work since the app is not deloyed to an environment
 
-### Deploying
+## CORS error
 
-Specify what it takes to deploy your app.
+- I have added the data from the API calls in as Mirage mock so the application can be demoed.
+- I was able to see real data by running terminal command:
 
-## Further Reading / Useful Links
+open -a [PATH TO Google\ Chrome] --args --disable-web-security --user-data-dir --user-data-dir="tmp"
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://cli.emberjs.com/release/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+## Things still TODO

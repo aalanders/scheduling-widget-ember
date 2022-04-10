@@ -29,6 +29,10 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV['ember-cli-mirage'] = {
+      enabled: true,
+    };
   }
 
   if (environment === 'test') {
@@ -41,10 +45,17 @@ module.exports = function (environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
+
+    ENV['ember-cli-mirage'] = {
+      enabled: true,
+    };
   }
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV['ember-cli-mirage'] = {
+      enabled: true,
+    };
   }
 
   return ENV;

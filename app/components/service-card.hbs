@@ -1,0 +1,7 @@
+<div class="service-card service-card-{{@index}}">
+    <div>
+        <h4>{{@cptCode.description}}</h4>
+        <p>{{@cptCode.durationDisplay}}</p>
+    </div>
+    <LinkTo class="button select-location" @route="scheduler.location" @model={{@cptCode.id}}>Select</LinkTo>
+</div>

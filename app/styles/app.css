@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,700,700italic);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+button {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.button {
+  padding: 5px 20px 5px;
+  text-decoration: none;
+  color: #fff;
+  background: #237abb;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.service-card {
+  width: 70%;
+  background-color: #f6f6f6;
+  margin: 20px 25px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main {
+  float: right;
+  width: 75%;
+  background-color: rgba(213, 206, 206, 0.639);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 15px 20px 15px;
+  border-top: 1px solid rgb(170, 168, 168);
+  border-bottom: 1px solid rgb(170, 168, 168);
+}
+
+.nav-bar h1 {
+  font-size: 14px;
+}
+
+.nav-bar h2 {
+  font-size: 14px;
+  color:rgb(170, 168, 168);
+  padding-left: 20px;
+}
+
+.location-card {
+  width: 30%;
+  height: 100px;
+  margin-top: 15px;
+  background-color: #f6f6f6;
+  margin: 20px 25px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location-card p {
+    padding-bottom: 12px;
+}
+
+.side-panel {
+  padding-top: 20px;
+  padding-left: 20px;
+  float: left;
+  width: 20%;
+  background-color: white;
+  font-size: 12px;
+  font-weight: 100
+}
+
+.side-panel__step {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.side-panel__details, .side-panel__clinician  {
+  color: rgb(87, 121, 179);
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
